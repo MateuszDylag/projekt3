@@ -2,6 +2,7 @@
 
 using namespace std;
 
+<<<<<<< HEAD
 bool isPrime(int a) {
     if(a < 2) {
         return false;
@@ -12,6 +13,13 @@ bool isPrime(int a) {
         }
     }
     return true;
+=======
+int factorial(int a) {
+    if(a == 0) {
+        return 1;
+    }
+    return a * factorial(a - 1);
+>>>>>>> firstBranch
 }
 
 int main() {
@@ -22,6 +30,7 @@ int main() {
         cout << "Podaj numer czynnosci, ktora chcesz wykonac" << endl;
         cout << "0. Wyjscie" << endl;
         cout << "1. Silnia" << endl;
+<<<<<<< HEAD
         cout << "2. Czy pierwsza" << endl;
         cin >> wyjscie;
 
@@ -30,6 +39,15 @@ int main() {
             cin >> a;
 
             isPrime(a) ? cout << "Pierwsza" << endl : cout << "Zlozona" << endl;
+=======
+        cin >> wyjscie;
+
+        if(wyjscie == 1) {
+            cout << "Wpisz liczbe z ktorej zostanie policzona silnia: ";
+            cin >> a;
+
+            cout << "Wynik: " << factorial(a) << endl;
+>>>>>>> firstBranch
         }
 
     } while(wyjscie != 0);
